@@ -8,12 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var navigationModels : [NavigationModel] = NavigationModel.preview
+    private let builder = ViewFactory()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List(Category.allCases) { category in
+                Section {
+                    ForEach(navigationModels) { model in
+                        if model.category == category {
+                            NavigationLink(model.name, value: model)
+                        }
+                    }
+                } header: {
+                    Text(category.localizedName)
+                }
+            }
+            .navigationDestination(for: NavigationModel.self) { model in
+                builder.buildViewWithClassName(viewClassName: model.viewClassName) 
+            }
         }
     }
 }
