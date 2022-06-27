@@ -11,6 +11,7 @@
 		2DF3ABA1285836A100DA868E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF3ABA0285836A100DA868E /* ContentView.swift */; };
 		2DF3ABA3285836A200DA868E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF3ABA2285836A200DA868E /* Assets.xcassets */; };
 		2DF3ABA7285836A200DA868E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF3ABA6285836A200DA868E /* Preview Assets.xcassets */; };
+		3C5212142869869000DCB788 /* ChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5212132869869000DCB788 /* ChartsUIView.swift */; };
 		3CF79853285C2C230027F2E2 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF79852285C2C230027F2E2 /* NavigationModel.swift */; };
 		3CF79855285C2CD30027F2E2 /* WhatsNewInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF79854285C2CD30027F2E2 /* WhatsNewInSwift.swift */; };
 /* End PBXBuildFile section */
@@ -22,6 +23,7 @@
 		2DF3ABA2285836A200DA868E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DF3ABA4285836A200DA868E /* WWDC2022.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WWDC2022.entitlements; sourceTree = "<group>"; };
 		2DF3ABA6285836A200DA868E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C5212132869869000DCB788 /* ChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsUIView.swift; sourceTree = "<group>"; };
 		3CF79852285C2C230027F2E2 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		3CF79854285C2CD30027F2E2 /* WhatsNewInSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewInSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +64,8 @@
 				2DF3ABA2285836A200DA868E /* Assets.xcassets */,
 				2DF3ABA4285836A200DA868E /* WWDC2022.entitlements */,
 				2DF3ABA5285836A200DA868E /* Preview Content */,
-				3CF79856285C2D000027F2E2 /* What's New In Swift */,
+				3C5212112869860100DCB788 /* SwiftUI */,
+				3C521210286985F900DCB788 /* Swift */,
 			);
 			path = WWDC2022;
 			sourceTree = "<group>";
@@ -73,6 +76,30 @@
 				2DF3ABA6285836A200DA868E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C521210286985F900DCB788 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3CF79856285C2D000027F2E2 /* What's New In Swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		3C5212112869860100DCB788 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				3C5212122869860F00DCB788 /* Charts */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		3C5212122869860F00DCB788 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				3C5212132869869000DCB788 /* ChartsUIView.swift */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		3CF79856285C2D000027F2E2 /* What's New In Swift */ = {
@@ -155,6 +182,7 @@
 			files = (
 				2DF3ABA1285836A100DA868E /* ContentView.swift in Sources */,
 				3CF79855285C2CD30027F2E2 /* WhatsNewInSwift.swift in Sources */,
+				3C5212142869869000DCB788 /* ChartsUIView.swift in Sources */,
 				2DF3AB9F285836A100DA868E /* WWDC2022App.swift in Sources */,
 				3CF79853285C2C230027F2E2 /* NavigationModel.swift in Sources */,
 			);
