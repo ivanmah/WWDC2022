@@ -13,6 +13,7 @@
 		2DF3ABA7285836A200DA868E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF3ABA6285836A200DA868E /* Preview Assets.xcassets */; };
 		3C5212142869869000DCB788 /* ChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5212132869869000DCB788 /* ChartsUIView.swift */; };
 		3C521216286BDFF300DCB788 /* MoreChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C521215286BDFF300DCB788 /* MoreChartsUIView.swift */; };
+		3C521218286C062400DCB788 /* DemoChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C521217286C062400DCB788 /* DemoChartsUIView.swift */; };
 		3CF79853285C2C230027F2E2 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF79852285C2C230027F2E2 /* NavigationModel.swift */; };
 		3CF79855285C2CD30027F2E2 /* WhatsNewInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF79854285C2CD30027F2E2 /* WhatsNewInSwift.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		2DF3ABA6285836A200DA868E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C5212132869869000DCB788 /* ChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsUIView.swift; sourceTree = "<group>"; };
 		3C521215286BDFF300DCB788 /* MoreChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreChartsUIView.swift; sourceTree = "<group>"; };
+		3C521217286C062400DCB788 /* DemoChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChartsUIView.swift; sourceTree = "<group>"; };
 		3CF79852285C2C230027F2E2 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		3CF79854285C2CD30027F2E2 /* WhatsNewInSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewInSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 			children = (
 				3C5212132869869000DCB788 /* ChartsUIView.swift */,
 				3C521215286BDFF300DCB788 /* MoreChartsUIView.swift */,
+				3C521217286C062400DCB788 /* DemoChartsUIView.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				2DF3AB9F285836A100DA868E /* WWDC2022App.swift in Sources */,
 				3C521216286BDFF300DCB788 /* MoreChartsUIView.swift in Sources */,
 				3CF79853285C2C230027F2E2 /* NavigationModel.swift in Sources */,
+				3C521218286C062400DCB788 /* DemoChartsUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

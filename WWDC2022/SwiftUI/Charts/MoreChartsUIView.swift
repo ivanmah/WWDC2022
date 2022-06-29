@@ -32,6 +32,9 @@ struct MoreChartsUIView: View {
         .init(Month: "Nov", Volume: 180, EstMinVolume: 170, EstMaxVolume: 200),
         .init(Month: "Dec", Volume: 190, EstMinVolume: 180, EstMaxVolume: 190)
     ]
+    
+    let avereage = 170
+    
     var body: some View {
         VStack {
             Section {
@@ -50,8 +53,23 @@ struct MoreChartsUIView: View {
                     }
                 }.chartYScale(domain: 100...200)
             }
-        }
-      
+            
+            Section {
+                Chart {
+                    ForEach(data) { item in
+                        BarMark(x: .value("Month", item.Month), yStart: .value("Est Monthly Min", item.EstMinVolume), yEnd: .value("Est Monthly Max", item.EstMaxVolume)).opacity(0.3)
+                        RectangleMark(x: .value("Month", item.Month), y: .value("Volume", item.Volume),height: 2)
+                    }.foregroundStyle(.gray.opacity(0.5))
+                    
+                    RuleMark(y: .value("Average", avereage))
+                        .annotation(position: .top, alignment: .leading) {
+                            Text("Average: \(avereage, format: .number)")
+                                .font(.headline)
+                                .foregroundColor(.blue)
+                    }
+                }.chartYScale(domain: 100...200)
+            }
+        }.navigationTitle("Charts")
     }
 }
 
