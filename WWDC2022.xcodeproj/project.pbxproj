@@ -14,6 +14,8 @@
 		3C5212142869869000DCB788 /* ChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5212132869869000DCB788 /* ChartsUIView.swift */; };
 		3C521216286BDFF300DCB788 /* MoreChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C521215286BDFF300DCB788 /* MoreChartsUIView.swift */; };
 		3C521218286C062400DCB788 /* DemoChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C521217286C062400DCB788 /* DemoChartsUIView.swift */; };
+		3C9BB626286D7C8C0079A214 /* GridUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB625286D7C8C0079A214 /* GridUIView.swift */; };
+		3C9BB629286ED11D0079A214 /* GaugeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB628286ED11D0079A214 /* GaugeUIView.swift */; };
 		3CF79853285C2C230027F2E2 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF79852285C2C230027F2E2 /* NavigationModel.swift */; };
 		3CF79855285C2CD30027F2E2 /* WhatsNewInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF79854285C2CD30027F2E2 /* WhatsNewInSwift.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		3C5212132869869000DCB788 /* ChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsUIView.swift; sourceTree = "<group>"; };
 		3C521215286BDFF300DCB788 /* MoreChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreChartsUIView.swift; sourceTree = "<group>"; };
 		3C521217286C062400DCB788 /* DemoChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChartsUIView.swift; sourceTree = "<group>"; };
+		3C9BB625286D7C8C0079A214 /* GridUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUIView.swift; sourceTree = "<group>"; };
+		3C9BB628286ED11D0079A214 /* GaugeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeUIView.swift; sourceTree = "<group>"; };
 		3CF79852285C2C230027F2E2 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		3CF79854285C2CD30027F2E2 /* WhatsNewInSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewInSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +97,8 @@
 		3C5212112869860100DCB788 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3C9BB627286ED10A0079A214 /* Gauge */,
+				3C9BB624286D7C790079A214 /* Grid */,
 				3C5212122869860F00DCB788 /* Charts */,
 			);
 			path = SwiftUI;
@@ -106,6 +112,22 @@
 				3C521217286C062400DCB788 /* DemoChartsUIView.swift */,
 			);
 			path = Charts;
+			sourceTree = "<group>";
+		};
+		3C9BB624286D7C790079A214 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				3C9BB625286D7C8C0079A214 /* GridUIView.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		3C9BB627286ED10A0079A214 /* Gauge */ = {
+			isa = PBXGroup;
+			children = (
+				3C9BB628286ED11D0079A214 /* GaugeUIView.swift */,
+			);
+			path = Gauge;
 			sourceTree = "<group>";
 		};
 		3CF79856285C2D000027F2E2 /* What's New In Swift */ = {
@@ -188,8 +210,10 @@
 			files = (
 				2DF3ABA1285836A100DA868E /* ContentView.swift in Sources */,
 				3CF79855285C2CD30027F2E2 /* WhatsNewInSwift.swift in Sources */,
+				3C9BB626286D7C8C0079A214 /* GridUIView.swift in Sources */,
 				3C5212142869869000DCB788 /* ChartsUIView.swift in Sources */,
 				2DF3AB9F285836A100DA868E /* WWDC2022App.swift in Sources */,
+				3C9BB629286ED11D0079A214 /* GaugeUIView.swift in Sources */,
 				3C521216286BDFF300DCB788 /* MoreChartsUIView.swift in Sources */,
 				3CF79853285C2C230027F2E2 /* NavigationModel.swift in Sources */,
 				3C521218286C062400DCB788 /* DemoChartsUIView.swift in Sources */,

@@ -52,42 +52,36 @@ let salesRegional : [Region] = [
 struct ChartsUIView: View {
     var body: some View {
         VStack {
-            Section {
-                Text("Bar Chart")
-                Chart {
-                    ForEach(salesRegional) { region in
-                        ForEach(region.sales) { salesman in
-                            BarMark(x: .value("Name", salesman.Name),
-                                    y: .value("Sales", salesman.Sales))
-                        }.foregroundStyle(by: .value("Country", region.country))
-                            .position(by: .value("Country", region.country))
-                    }
+            Text("Bar Chart")
+            Chart {
+                ForEach(salesRegional) { region in
+                    ForEach(region.sales) { salesman in
+                        BarMark(x: .value("Name", salesman.Name),
+                                y: .value("Sales", salesman.Sales))
+                    }.foregroundStyle(by: .value("Country", region.country))
+                        .position(by: .value("Country", region.country))
                 }
             }
             
-            Section {
-                Text("Line Chart")
-                Chart {
-                    ForEach(salesRegional) { region in
-                        ForEach(region.sales) { salesman in
-                            LineMark(x: .value("Name", salesman.Name),
-                                    y: .value("Sales", salesman.Sales))
-                        }.foregroundStyle(by: .value("Country", region.country))
-                            .symbol(by: .value("Country", region.country))
-                            .interpolationMethod(.catmullRom)
-                    }
+            Text("Line Chart")
+            Chart {
+                ForEach(salesRegional) { region in
+                    ForEach(region.sales) { salesman in
+                        LineMark(x: .value("Name", salesman.Name),
+                                 y: .value("Sales", salesman.Sales))
+                    }.foregroundStyle(by: .value("Country", region.country))
+                        .symbol(by: .value("Country", region.country))
+                        .interpolationMethod(.catmullRom)
                 }
             }
-          
-            Section {
-                Text("Area Chart")
-                Chart {
-                    ForEach(salesRegional) { region in
-                        ForEach(region.sales) { salesman in
-                            AreaMark(x: .value("Name", salesman.Name),
-                                    y: .value("Sales", salesman.Sales))
-                        }.foregroundStyle(by: .value("Country", region.country))
-                    }
+            
+            Text("Area Chart")
+            Chart {
+                ForEach(salesRegional) { region in
+                    ForEach(region.sales) { salesman in
+                        AreaMark(x: .value("Name", salesman.Name),
+                                 y: .value("Sales", salesman.Sales))
+                    }.foregroundStyle(by: .value("Country", region.country))
                 }
             }
         }.navigationTitle("Charts").toolbar {
