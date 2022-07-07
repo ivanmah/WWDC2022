@@ -20,6 +20,8 @@ struct NavigationModel : Identifiable, Hashable {
         .init(name: "Charts", viewClassName: "DemoChartsUIView", category: .SwiftUI),
         .init(name: "Grid", viewClassName: "GridUIView", category: .SwiftUI),
         .init(name: "Gauge", viewClassName: "GaugeUIView" , category: .SwiftUI),
+        .init(name: "Multi Date Picker", viewClassName: "MultiDatePickerUIView", category: .SwiftUI),
+        .init(name: "Table", viewClassName: "TableUIView", category: .SwiftUI),
         .init(name: "What's new in Xcode", viewClassName: "", category: .Xcode)
     ]
 }
@@ -55,6 +57,10 @@ struct ViewFactory {
             GridUIView()
         case "GaugeUIView":
             GaugeUIView()
+        case "MultiDatePickerUIView":
+            MultiDatePickerUIView()
+        case "TableUIView":
+            TableUIView()
         default:
             Text("Empty View")
         }
