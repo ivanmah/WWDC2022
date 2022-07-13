@@ -14,10 +14,14 @@
 		3C5212142869869000DCB788 /* ChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5212132869869000DCB788 /* ChartsUIView.swift */; };
 		3C521216286BDFF300DCB788 /* MoreChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C521215286BDFF300DCB788 /* MoreChartsUIView.swift */; };
 		3C521218286C062400DCB788 /* DemoChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C521217286C062400DCB788 /* DemoChartsUIView.swift */; };
+		3C7AB2FE287DC97C004ADDE5 /* SearchableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AB2FD287DC97C004ADDE5 /* SearchableUIView.swift */; };
 		3C9BB626286D7C8C0079A214 /* GridUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB625286D7C8C0079A214 /* GridUIView.swift */; };
 		3C9BB629286ED11D0079A214 /* GaugeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB628286ED11D0079A214 /* GaugeUIView.swift */; };
 		3C9BB62C286EEA960079A214 /* MultiDatePickerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB62B286EEA960079A214 /* MultiDatePickerUIView.swift */; };
 		3CA1EA872875231F0007346E /* TableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1EA862875231F0007346E /* TableUIView.swift */; };
+		3CA1EA8A2876C86F0007346E /* BottomSheetUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1EA892876C86F0007346E /* BottomSheetUIView.swift */; };
+		3CA1EA8D2877D7370007346E /* ShareLinkUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1EA8C2877D7370007346E /* ShareLinkUIView.swift */; };
+		3CA1EA8F287820EC0007346E /* PhotoUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1EA8E287820EC0007346E /* PhotoUIView.swift */; };
 		3CF79853285C2C230027F2E2 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF79852285C2C230027F2E2 /* NavigationModel.swift */; };
 		3CF79855285C2CD30027F2E2 /* WhatsNewInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF79854285C2CD30027F2E2 /* WhatsNewInSwift.swift */; };
 /* End PBXBuildFile section */
@@ -32,10 +36,14 @@
 		3C5212132869869000DCB788 /* ChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsUIView.swift; sourceTree = "<group>"; };
 		3C521215286BDFF300DCB788 /* MoreChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreChartsUIView.swift; sourceTree = "<group>"; };
 		3C521217286C062400DCB788 /* DemoChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChartsUIView.swift; sourceTree = "<group>"; };
+		3C7AB2FD287DC97C004ADDE5 /* SearchableUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableUIView.swift; sourceTree = "<group>"; };
 		3C9BB625286D7C8C0079A214 /* GridUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUIView.swift; sourceTree = "<group>"; };
 		3C9BB628286ED11D0079A214 /* GaugeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeUIView.swift; sourceTree = "<group>"; };
 		3C9BB62B286EEA960079A214 /* MultiDatePickerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDatePickerUIView.swift; sourceTree = "<group>"; };
 		3CA1EA862875231F0007346E /* TableUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableUIView.swift; sourceTree = "<group>"; };
+		3CA1EA892876C86F0007346E /* BottomSheetUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetUIView.swift; sourceTree = "<group>"; };
+		3CA1EA8C2877D7370007346E /* ShareLinkUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkUIView.swift; sourceTree = "<group>"; };
+		3CA1EA8E287820EC0007346E /* PhotoUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUIView.swift; sourceTree = "<group>"; };
 		3CF79852285C2C230027F2E2 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		3CF79854285C2CD30027F2E2 /* WhatsNewInSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewInSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +109,9 @@
 		3C5212112869860100DCB788 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3C7AB2FC287DC969004ADDE5 /* Searchable */,
+				3CA1EA8B2877D7270007346E /* ShareLink */,
+				3CA1EA882876C8440007346E /* BottomSheetPresentation */,
 				3CA1EA85287523100007346E /* Table */,
 				3C9BB62A286EEA800079A214 /* MultiDatePicker */,
 				3C9BB627286ED10A0079A214 /* Gauge */,
@@ -118,6 +129,14 @@
 				3C521217286C062400DCB788 /* DemoChartsUIView.swift */,
 			);
 			path = Charts;
+			sourceTree = "<group>";
+		};
+		3C7AB2FC287DC969004ADDE5 /* Searchable */ = {
+			isa = PBXGroup;
+			children = (
+				3C7AB2FD287DC97C004ADDE5 /* SearchableUIView.swift */,
+			);
+			path = Searchable;
 			sourceTree = "<group>";
 		};
 		3C9BB624286D7C790079A214 /* Grid */ = {
@@ -150,6 +169,23 @@
 				3CA1EA862875231F0007346E /* TableUIView.swift */,
 			);
 			path = Table;
+			sourceTree = "<group>";
+		};
+		3CA1EA882876C8440007346E /* BottomSheetPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1EA892876C86F0007346E /* BottomSheetUIView.swift */,
+			);
+			path = BottomSheetPresentation;
+			sourceTree = "<group>";
+		};
+		3CA1EA8B2877D7270007346E /* ShareLink */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1EA8C2877D7370007346E /* ShareLinkUIView.swift */,
+				3CA1EA8E287820EC0007346E /* PhotoUIView.swift */,
+			);
+			path = ShareLink;
 			sourceTree = "<group>";
 		};
 		3CF79856285C2D000027F2E2 /* What's New In Swift */ = {
@@ -230,8 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7AB2FE287DC97C004ADDE5 /* SearchableUIView.swift in Sources */,
 				2DF3ABA1285836A100DA868E /* ContentView.swift in Sources */,
+				3CA1EA8F287820EC0007346E /* PhotoUIView.swift in Sources */,
+				3CA1EA8A2876C86F0007346E /* BottomSheetUIView.swift in Sources */,
 				3CF79855285C2CD30027F2E2 /* WhatsNewInSwift.swift in Sources */,
+				3CA1EA8D2877D7370007346E /* ShareLinkUIView.swift in Sources */,
 				3CA1EA872875231F0007346E /* TableUIView.swift in Sources */,
 				3C9BB626286D7C8C0079A214 /* GridUIView.swift in Sources */,
 				3C5212142869869000DCB788 /* ChartsUIView.swift in Sources */,
