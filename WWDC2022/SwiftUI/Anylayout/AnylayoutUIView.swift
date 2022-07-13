@@ -14,16 +14,21 @@ struct AnylayoutUIView: View {
     
     @Environment(\.dynamicTypeSize) var dynamicTypeSize
     
+    @State private var toggleState = false
+    
     var body: some View {
-        let layout = horizontalSizeClass == .regular ? AnyLayout(HStack()) : AnyLayout(VStack())
+//        let layout = horizontalSizeClass == .regular ? AnyLayout(HStack()) : AnyLayout(VStack())
 //        let layout = dynamicTypeSize <=  .xLarge ? AnyLayout(HStack()) : AnyLayout(VStack())
+        let layout = toggleState ? AnyLayout(HStack()) : AnyLayout(VStack())
         
         layout {
             Image(systemName: "1.circle")
             Image(systemName: "2.circle")
             Image(systemName: "3.circle")
+            Toggle(isOn: $toggleState) {
+                Text("Switch")
+            }
         }
-        .font(.largeTitle)
     }
 }
 
