@@ -20,6 +20,7 @@ struct NavigationModel : Identifiable, Hashable {
         .init(name: "Charts", viewClassName: "DemoChartsUIView", category: .SwiftUI),
         .init(name: "Grid", viewClassName: "GridUIView", category: .SwiftUI),
         .init(name: "Gauge", viewClassName: "GaugeUIView" , category: .SwiftUI),
+        .init(name: "Anylayout", viewClassName: "AnylayoutUIView", category: .SwiftUI),
         .init(name: "Multi Date Picker", viewClassName: "MultiDatePickerUIView", category: .SwiftUI),
         .init(name: "Table", viewClassName: "TableUIView", category: .SwiftUI),
         .init(name: "BottomSheet Control", viewClassName: "BottomSheetUIView", category: .SwiftUI),
@@ -70,6 +71,8 @@ struct ViewFactory {
             ShareLinkUIView()
         case "SearchableUIView":
             SearchableUIView()
+        case "AnylayoutUIView":
+            AnylayoutUIView()
         default:
             Text("Empty View")
         }
