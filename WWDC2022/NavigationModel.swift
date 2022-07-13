@@ -26,6 +26,8 @@ struct NavigationModel : Identifiable, Hashable {
         .init(name: "BottomSheet Control", viewClassName: "BottomSheetUIView", category: .SwiftUI),
         .init(name: "ShareLink", viewClassName: "ShareLinkUIView", category: .SwiftUI),
         .init(name: "Searchable", viewClassName: "SearchableUIView", category: .SwiftUI),
+        .init(name: "ScrollDismissKeyboard", viewClassName: "ScrollDismissKboardUIView", category: .SwiftUI),
+        .init(name: "SF Symbols", viewClassName: "SFSymbolsUIView", category: .SwiftUI),
         .init(name: "What's new in Xcode", viewClassName: "", category: .Xcode)
     ]
 }
@@ -73,6 +75,10 @@ struct ViewFactory {
             SearchableUIView()
         case "AnylayoutUIView":
             AnylayoutUIView()
+        case "ScrollDismissKboardUIView":
+            ScrollViewUIView()
+        case "SFSymbolsUIView":
+            SFSymbolsUIView()
         default:
             Text("Empty View")
         }
