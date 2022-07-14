@@ -28,6 +28,8 @@ struct NavigationModel : Identifiable, Hashable {
         .init(name: "Searchable", viewClassName: "SearchableUIView", category: .SwiftUI),
         .init(name: "ScrollDismissKeyboard", viewClassName: "ScrollDismissKboardUIView", category: .SwiftUI),
         .init(name: "SF Symbols", viewClassName: "SFSymbolsUIView", category: .SwiftUI),
+        .init(name: "Navigation Stack", viewClassName: "NavigationStackUIView", category: .SwiftUI),
+        .init(name: "Navigation Split", viewClassName: "NavigationSplitUIView", category: .SwiftUI),
         .init(name: "What's new in Xcode", viewClassName: "", category: .Xcode)
     ]
 }
@@ -79,9 +81,12 @@ struct ViewFactory {
             ScrollViewUIView()
         case "SFSymbolsUIView":
             SFSymbolsUIView()
+        case "NavigationStackUIView":
+            NavigationStackUIView()
+        case "NavigationSplitUIView":
+            NavigationSplitUIView()
         default:
             Text("Empty View")
         }
     }
-    
 }

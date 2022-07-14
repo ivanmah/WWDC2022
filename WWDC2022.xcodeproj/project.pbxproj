@@ -16,6 +16,8 @@
 		3C521218286C062400DCB788 /* DemoChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C521217286C062400DCB788 /* DemoChartsUIView.swift */; };
 		3C65A8C8287E72630086D62E /* ScrollViewUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65A8C7287E72630086D62E /* ScrollViewUIView.swift */; };
 		3C65A8CB287E7BAF0086D62E /* SFSymbolsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65A8CA287E7BAF0086D62E /* SFSymbolsUIView.swift */; };
+		3C65A8D0287EA0B40086D62E /* NavigationStackUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65A8CF287EA0B40086D62E /* NavigationStackUIView.swift */; };
+		3C65A8D3287EA1070086D62E /* NavigationSplitUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65A8D2287EA1070086D62E /* NavigationSplitUIView.swift */; };
 		3C7AB2FE287DC97C004ADDE5 /* SearchableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AB2FD287DC97C004ADDE5 /* SearchableUIView.swift */; };
 		3C7AB301287E52A4004ADDE5 /* AnylayoutUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AB300287E52A4004ADDE5 /* AnylayoutUIView.swift */; };
 		3C9BB626286D7C8C0079A214 /* GridUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB625286D7C8C0079A214 /* GridUIView.swift */; };
@@ -41,6 +43,8 @@
 		3C521217286C062400DCB788 /* DemoChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChartsUIView.swift; sourceTree = "<group>"; };
 		3C65A8C7287E72630086D62E /* ScrollViewUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewUIView.swift; sourceTree = "<group>"; };
 		3C65A8CA287E7BAF0086D62E /* SFSymbolsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsUIView.swift; sourceTree = "<group>"; };
+		3C65A8CF287EA0B40086D62E /* NavigationStackUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackUIView.swift; sourceTree = "<group>"; };
+		3C65A8D2287EA1070086D62E /* NavigationSplitUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitUIView.swift; sourceTree = "<group>"; };
 		3C7AB2FD287DC97C004ADDE5 /* SearchableUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableUIView.swift; sourceTree = "<group>"; };
 		3C7AB300287E52A4004ADDE5 /* AnylayoutUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnylayoutUIView.swift; sourceTree = "<group>"; };
 		3C9BB625286D7C8C0079A214 /* GridUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUIView.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 		3C5212112869860100DCB788 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3C65A8D1287EA0F20086D62E /* NavigationSplit */,
+				3C65A8CC287EA08C0086D62E /* NavigationStack */,
 				3C65A8C9287E7B880086D62E /* SFSymbols */,
 				3C7AB302287E71F0004ADDE5 /* ScrollDismissesKeyboard */,
 				3C7AB2FF287E5185004ADDE5 /* Anylayout */,
@@ -146,6 +152,22 @@
 				3C65A8CA287E7BAF0086D62E /* SFSymbolsUIView.swift */,
 			);
 			path = SFSymbols;
+			sourceTree = "<group>";
+		};
+		3C65A8CC287EA08C0086D62E /* NavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				3C65A8CF287EA0B40086D62E /* NavigationStackUIView.swift */,
+			);
+			path = NavigationStack;
+			sourceTree = "<group>";
+		};
+		3C65A8D1287EA0F20086D62E /* NavigationSplit */ = {
+			isa = PBXGroup;
+			children = (
+				3C65A8D2287EA1070086D62E /* NavigationSplitUIView.swift */,
+			);
+			path = NavigationSplit;
 			sourceTree = "<group>";
 		};
 		3C7AB2FC287DC969004ADDE5 /* Searchable */ = {
@@ -299,8 +321,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C65A8D0287EA0B40086D62E /* NavigationStackUIView.swift in Sources */,
 				3C7AB2FE287DC97C004ADDE5 /* SearchableUIView.swift in Sources */,
 				3C65A8CB287E7BAF0086D62E /* SFSymbolsUIView.swift in Sources */,
+				3C65A8D3287EA1070086D62E /* NavigationSplitUIView.swift in Sources */,
 				2DF3ABA1285836A100DA868E /* ContentView.swift in Sources */,
 				3CA1EA8F287820EC0007346E /* PhotoUIView.swift in Sources */,
 				3CA1EA8A2876C86F0007346E /* BottomSheetUIView.swift in Sources */,

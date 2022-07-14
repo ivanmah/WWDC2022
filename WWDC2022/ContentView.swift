@@ -13,22 +13,40 @@ struct ContentView: View {
     private let builder = ViewFactory()
     
     var body: some View {
-        NavigationStack {
-            List(Category.allCases) { category in
-                Section {
-                    ForEach(navigationModels) { model in
-                        if model.category == category {
-                            NavigationLink(model.name, value: model)
+                NavigationStack {
+                    List(Category.allCases) { category in
+                        Section {
+                            ForEach(navigationModels) { model in
+                                if model.category == category {
+                                    NavigationLink(model.name, value: model)
+                                }
+                            }
+                        } header: {
+                            Text(category.localizedName)
                         }
                     }
-                } header: {
-                    Text(category.localizedName)
+                    .navigationDestination(for: NavigationModel.self) { model in
+                        builder.buildViewWithClassName(viewClassName: model.viewClassName)
+                    }
                 }
-            }
-            .navigationDestination(for: NavigationModel.self) { model in
-                builder.buildViewWithClassName(viewClassName: model.viewClassName) 
-            }
-        }
+        
+        
+//        NavigationView {
+//            List(Category.allCases) { category in
+//                Section {
+//                    ForEach(navigationModels) { model in
+//                        if model.category == category {
+//                            NavigationLink(model.name) {
+//                                builder.buildViewWithClassName(viewClassName: model.viewClassName)
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        }
+        
+        
+        
     }
 }
 
