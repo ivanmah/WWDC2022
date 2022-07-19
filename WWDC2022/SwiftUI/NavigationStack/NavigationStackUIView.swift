@@ -9,10 +9,11 @@ import SwiftUI
 
 struct NavigationStackUIView: View {
     
+    @State var navigationPath : NavigationPath
     @State private var presentedNumbers = NavigationPath()
 
     var body: some View {
-        NavigationStack(path: $presentedNumbers) {
+        NavigationStack(path: $navigationPath) {
             List(1..<50) { i in
                 NavigationLink(value: i) {
                     Label("Row \(i)", systemImage: "\(i).circle")
@@ -28,6 +29,6 @@ struct NavigationStackUIView: View {
 
 struct NavigationStackUIView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationStackUIView()
+        NavigationStackUIView(navigationPath: NavigationPath())
     }
 }

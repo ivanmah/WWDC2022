@@ -55,7 +55,7 @@ struct ViewFactory {
     
     // make function ViewBuilder
     @ViewBuilder
-    func buildViewWithClassName(viewClassName: String) -> some View {
+    func buildViewWithClassName(viewClassName: String, navigationPath : NavigationPath? = nil) -> some View {
         switch viewClassName {
         case "WhatsNewInSwift":
             WhatsNewInSwift()
@@ -82,7 +82,7 @@ struct ViewFactory {
         case "SFSymbolsUIView":
             SFSymbolsUIView()
         case "NavigationStackUIView":
-            NavigationStackUIView()
+            NavigationStackUIView(navigationPath: navigationPath ?? NavigationPath())
         case "NavigationSplitUIView":
             NavigationSplitUIView()
         default:
