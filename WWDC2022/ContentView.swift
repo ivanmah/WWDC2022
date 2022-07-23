@@ -7,15 +7,19 @@
 
 import SwiftUI
 
+final class Router: ObservableObject {
+    @Published var navigationPath = NavigationPath()
+}
+
 struct ContentView: View {
     
     @State private var navigationModels : [NavigationModel] = NavigationModel.preview
     private let builder = ViewFactory()
     
-    @State public var navigationPath = NavigationPath()
+    @EnvironmentObject var router : Router
     
         var body: some View {
-            NavigationStack(path: $navigationPath) {
+            NavigationStack(path: $router.navigationPath) {
                 List(Category.allCases) { category in
                     Section {
                         ForEach(navigationModels) { model in
@@ -28,15 +32,19 @@ struct ContentView: View {
                     }
                 }
                 .navigationDestination(for: NavigationModel.self) { model in
-                    builder.buildViewWithClassName(viewClassName: model.viewClassName, navigationPath: navigationPath)
+                    builder.buildViewWithClassName(viewClassName: model.viewClassName, navigationPath: router.navigationPath)
                 }
                 .listStyle(SidebarListStyle())
             }
+            .environmentObject(self.router)
         }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    
+    static let envObject = Router()
+    
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(envObject)
     }
 }

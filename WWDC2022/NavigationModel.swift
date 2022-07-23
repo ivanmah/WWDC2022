@@ -30,13 +30,13 @@ struct NavigationModel : Identifiable, Hashable {
         .init(name: "SF Symbols", viewClassName: "SFSymbolsUIView", category: .SwiftUI),
         .init(name: "Navigation Stack", viewClassName: "NavigationStackUIView", category: .SwiftUI),
         .init(name: "Navigation Split", viewClassName: "NavigationSplitUIView", category: .SwiftUI),
-        .init(name: "What's new in Xcode", viewClassName: "", category: .Xcode)
+//        .init(name: "What's new in Xcode", viewClassName: "", category: .Xcode)
     ]
 }
 
 enum Category: Int, Hashable, CaseIterable, Identifiable, Codable {
     
-    case Swift, SwiftUI, Xcode
+    case Swift, SwiftUI //, Xcode
     var id: Int {rawValue}
     
     var localizedName: LocalizedStringKey {
@@ -45,8 +45,8 @@ enum Category: Int, Hashable, CaseIterable, Identifiable, Codable {
             return "Swift"
         case .SwiftUI:
             return "SwiftUI"
-        case .Xcode:
-            return "Xcode"
+//        case .Xcode:
+//            return "Xcode"
         }
     }
 }
@@ -82,7 +82,7 @@ struct ViewFactory {
         case "SFSymbolsUIView":
             SFSymbolsUIView()
         case "NavigationStackUIView":
-            NavigationStackUIView(navigationPath: navigationPath ?? NavigationPath())
+            NavigationStackUIView()
         case "NavigationSplitUIView":
             NavigationSplitUIView()
         default:

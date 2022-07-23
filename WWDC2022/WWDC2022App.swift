@@ -11,7 +11,7 @@ import SwiftUI
 struct WWDC2022App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(Router())
         }
     }
 }
