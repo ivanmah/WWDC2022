@@ -8,47 +8,6 @@
 import SwiftUI
 import Charts
 
-struct Salesman : Identifiable {
-    let Name : String
-    let Sales : Int
-    
-    var id : String {Name}
-}
-
-struct Region : Identifiable {
-    let sales : [Salesman]
-    let country : String
-    
-    var id : String {country}
-}
-
-let salesSG : [Salesman] = [
-    .init(Name: "John", Sales: 150),
-    .init(Name: "Tom", Sales: 100),
-    .init(Name: "Jane", Sales: 120),
-    .init(Name: "Jamie", Sales: 90),
-    .init(Name: "Melissa", Sales: 60)]
-
-let salesMY : [Salesman] = [
-    .init(Name: "John", Sales: 200),
-    .init(Name: "Tom", Sales: 150),
-    .init(Name: "Jane", Sales: 20),
-    .init(Name: "Jamie", Sales: 70),
-    .init(Name: "Melissa", Sales: 10)]
-
-let salesThai : [Salesman] = [
-    .init(Name: "John", Sales: 170),
-    .init(Name: "Tom", Sales: 50),
-    .init(Name: "Jane", Sales: 200),
-    .init(Name: "Jamie", Sales: 120),
-    .init(Name: "Melissa", Sales: 30)]
-
-let salesRegional : [Region] = [
-    .init(sales: salesSG, country: "Singapore"),
-    .init(sales: salesMY, country: "Malaysia"),
-    .init(sales: salesThai, country: "Thailand")
-]
-
 struct ChartsUIView: View {
     var body: some View {
         VStack {
