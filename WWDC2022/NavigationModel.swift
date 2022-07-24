@@ -18,7 +18,7 @@ struct NavigationModel : Identifiable, Hashable {
     static let preview : [NavigationModel] = [
         .init(name: "What's new in Swift", viewClassName: "WhatsNewInSwift", category: .Swift),
         .init(name: "Charts", viewClassName: "DemoChartsUIView", category: .SwiftUI),
-        .init(name: "Grid", viewClassName: "GridUIView", category: .SwiftUI),
+        .init(name: "Grid", viewClassName: "DemoGridUIView", category: .SwiftUI),
         .init(name: "Gauge", viewClassName: "GaugeUIView" , category: .SwiftUI),
         .init(name: "Anylayout", viewClassName: "AnylayoutUIView", category: .SwiftUI),
         .init(name: "Multi Date Picker", viewClassName: "MultiDatePickerUIView", category: .SwiftUI),
@@ -61,8 +61,8 @@ struct ViewFactory {
             WhatsNewInSwift()
         case "DemoChartsUIView":
             DemoChartsUIView()
-        case "GridUIView":
-            GridUIView()
+        case "DemoGridUIView":
+            DemoGridUIView()
         case "GaugeUIView":
             GaugeUIView()
         case "MultiDatePickerUIView":

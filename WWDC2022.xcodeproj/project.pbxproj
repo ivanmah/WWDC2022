@@ -21,6 +21,7 @@
 		3C7AB2FE287DC97C004ADDE5 /* SearchableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AB2FD287DC97C004ADDE5 /* SearchableUIView.swift */; };
 		3C7AB301287E52A4004ADDE5 /* AnylayoutUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AB300287E52A4004ADDE5 /* AnylayoutUIView.swift */; };
 		3C883340288CB6880076C0FF /* ChartsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88333F288CB6880076C0FF /* ChartsData.swift */; };
+		3C883342288D84AA0076C0FF /* DemoGridUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C883341288D84AA0076C0FF /* DemoGridUIView.swift */; };
 		3C9BB626286D7C8C0079A214 /* GridUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB625286D7C8C0079A214 /* GridUIView.swift */; };
 		3C9BB629286ED11D0079A214 /* GaugeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB628286ED11D0079A214 /* GaugeUIView.swift */; };
 		3C9BB62C286EEA960079A214 /* MultiDatePickerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB62B286EEA960079A214 /* MultiDatePickerUIView.swift */; };
@@ -49,6 +50,7 @@
 		3C7AB2FD287DC97C004ADDE5 /* SearchableUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableUIView.swift; sourceTree = "<group>"; };
 		3C7AB300287E52A4004ADDE5 /* AnylayoutUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnylayoutUIView.swift; sourceTree = "<group>"; };
 		3C88333F288CB6880076C0FF /* ChartsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsData.swift; sourceTree = "<group>"; };
+		3C883341288D84AA0076C0FF /* DemoGridUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGridUIView.swift; sourceTree = "<group>"; };
 		3C9BB625286D7C8C0079A214 /* GridUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUIView.swift; sourceTree = "<group>"; };
 		3C9BB628286ED11D0079A214 /* GaugeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeUIView.swift; sourceTree = "<group>"; };
 		3C9BB62B286EEA960079A214 /* MultiDatePickerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDatePickerUIView.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				3C9BB625286D7C8C0079A214 /* GridUIView.swift */,
+				3C883341288D84AA0076C0FF /* DemoGridUIView.swift */,
 			);
 			path = Grid;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				2DF3ABA1285836A100DA868E /* ContentView.swift in Sources */,
 				3CA1EA8F287820EC0007346E /* PhotoUIView.swift in Sources */,
 				3CA1EA8A2876C86F0007346E /* BottomSheetUIView.swift in Sources */,
+				3C883342288D84AA0076C0FF /* DemoGridUIView.swift in Sources */,
 				3CF79855285C2CD30027F2E2 /* WhatsNewInSwift.swift in Sources */,
 				3CA1EA8D2877D7370007346E /* ShareLinkUIView.swift in Sources */,
 				3CA1EA872875231F0007346E /* TableUIView.swift in Sources */,
