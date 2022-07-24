@@ -19,10 +19,10 @@ struct TableUIView: View {
     @State private var users = [
         User(id: 1, name: "Taylor Swift", score: 95, song: "Love Story"),
         User(id: 2, name: "Justin Bieber", score: 70, song: "Baby"),
-        User(id: 3, name: "Adele Adkins", score: 90, song: "Hello"),
+        User(id: 3, name: "Adele", score: 90, song: "Hello"),
         User(id: 4, name: "Lady Gaga", score: 80, song: "Pocker Face"),
         User(id: 5, name: "Katy Perry", score: 85, song: "Teenage Dream"),
-        User(id: 6, name: "Eninem", score: 75, song: "Not Afriad")
+        User(id: 6, name: "Eninem", score: 75, song: "Not Afraid")
     ]
     
     @State private var sortOrder = [KeyPathComparator(\User.name)]
