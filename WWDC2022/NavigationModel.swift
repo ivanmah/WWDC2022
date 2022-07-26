@@ -16,7 +16,7 @@ struct NavigationModel : Identifiable, Hashable {
     let category : Category
     
     static let preview : [NavigationModel] = [
-        .init(name: "What's new in Swift", viewClassName: "WhatsNewInSwift", category: .Swift),
+        .init(name: "Regular Expressions", viewClassName: "RegularExpressions", category: .Swift),
         .init(name: "Charts", viewClassName: "DemoChartsUIView", category: .SwiftUI),
         .init(name: "Grid", viewClassName: "DemoGridUIView", category: .SwiftUI),
         .init(name: "Gauge", viewClassName: "GaugeUIView" , category: .SwiftUI),
@@ -57,8 +57,8 @@ struct ViewFactory {
     @ViewBuilder
     func buildViewWithClassName(viewClassName: String, navigationPath : NavigationPath? = nil) -> some View {
         switch viewClassName {
-        case "WhatsNewInSwift":
-            WhatsNewInSwift()
+        case "RegularExpressions":
+            RegularExpressions()
         case "DemoChartsUIView":
             DemoChartsUIView()
         case "DemoGridUIView":

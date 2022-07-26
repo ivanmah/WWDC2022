@@ -45,6 +45,8 @@ struct ContentView_Previews: PreviewProvider {
     static let envObject = Router()
     
     static var previews: some View {
-        ContentView().environmentObject(envObject)
+        ContentView()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+            .environmentObject(envObject)
     }
 }
