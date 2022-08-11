@@ -12,6 +12,8 @@
 		2DF3ABA1285836A100DA868E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF3ABA0285836A100DA868E /* ContentView.swift */; };
 		2DF3ABA3285836A200DA868E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF3ABA2285836A200DA868E /* Assets.xcassets */; };
 		2DF3ABA7285836A200DA868E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF3ABA6285836A200DA868E /* Preview Assets.xcassets */; };
+		3C51C9CF28A54AC400BE4C76 /* DocCSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51C9CE28A54AC400BE4C76 /* DocCSwiftUIView.swift */; };
+		3C51C9D428A552D400BE4C76 /* WWDC2022.docc in Sources */ = {isa = PBXBuildFile; fileRef = 3C51C9D328A552D400BE4C76 /* WWDC2022.docc */; };
 		3C5212142869869000DCB788 /* ChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5212132869869000DCB788 /* ChartsUIView.swift */; };
 		3C521216286BDFF300DCB788 /* MoreChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C521215286BDFF300DCB788 /* MoreChartsUIView.swift */; };
 		3C521218286C062400DCB788 /* DemoChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C521217286C062400DCB788 /* DemoChartsUIView.swift */; };
@@ -43,6 +45,8 @@
 		2DF3ABA2285836A200DA868E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DF3ABA4285836A200DA868E /* WWDC2022.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WWDC2022.entitlements; sourceTree = "<group>"; };
 		2DF3ABA6285836A200DA868E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C51C9CE28A54AC400BE4C76 /* DocCSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocCSwiftUIView.swift; sourceTree = "<group>"; };
+		3C51C9D328A552D400BE4C76 /* WWDC2022.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WWDC2022.docc; sourceTree = "<group>"; };
 		3C5212132869869000DCB788 /* ChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsUIView.swift; sourceTree = "<group>"; };
 		3C521215286BDFF300DCB788 /* MoreChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreChartsUIView.swift; sourceTree = "<group>"; };
 		3C521217286C062400DCB788 /* DemoChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChartsUIView.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		3CA1EA8E287820EC0007346E /* PhotoUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUIView.swift; sourceTree = "<group>"; };
 		3CA38FCA2897763C004BC659 /* XcodeDemoUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeDemoUIView.swift; sourceTree = "<group>"; };
 		3CA38FCC28977877004BC659 /* XcodeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeUIView.swift; sourceTree = "<group>"; };
+		3CA38FCF2898C9BB004BC659 /* WWDC2022-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDC2022-Bridging-Header.h"; sourceTree = "<group>"; };
 		3CF79852285C2C230027F2E2 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +101,7 @@
 		2DF3AB9D285836A100DA868E /* WWDC2022 */ = {
 			isa = PBXGroup;
 			children = (
+				3CA38FCE2898C975004BC659 /* DocC */,
 				3CA38FC928977627004BC659 /* Xcode */,
 				2DF3AB9E285836A100DA868E /* WWDC2022App.swift */,
 				2DF3ABA0285836A100DA868E /* ContentView.swift */,
@@ -105,6 +111,7 @@
 				2DF3ABA5285836A200DA868E /* Preview Content */,
 				3C5212112869860100DCB788 /* SwiftUI */,
 				3C521210286985F900DCB788 /* Swift */,
+				3C51C9D328A552D400BE4C76 /* WWDC2022.docc */,
 			);
 			path = WWDC2022;
 			sourceTree = "<group>";
@@ -263,6 +270,15 @@
 			path = Xcode;
 			sourceTree = "<group>";
 		};
+		3CA38FCE2898C975004BC659 /* DocC */ = {
+			isa = PBXGroup;
+			children = (
+				3CA38FCF2898C9BB004BC659 /* WWDC2022-Bridging-Header.h */,
+				3C51C9CE28A54AC400BE4C76 /* DocCSwiftUIView.swift */,
+			);
+			path = DocC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,6 +311,7 @@
 				TargetAttributes = {
 					2DF3AB9A285836A100DA868E = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -338,6 +355,7 @@
 				3C65A8CB287E7BAF0086D62E /* SFSymbolsUIView.swift in Sources */,
 				3CA38FCB2897763C004BC659 /* XcodeDemoUIView.swift in Sources */,
 				3C65A8D3287EA1070086D62E /* NavigationSplitUIView.swift in Sources */,
+				3C51C9D428A552D400BE4C76 /* WWDC2022.docc in Sources */,
 				2DF3ABA1285836A100DA868E /* ContentView.swift in Sources */,
 				3CA1EA8F287820EC0007346E /* PhotoUIView.swift in Sources */,
 				3CA1EA8A2876C86F0007346E /* BottomSheetUIView.swift in Sources */,
@@ -355,6 +373,7 @@
 				3CF79853285C2C230027F2E2 /* NavigationModel.swift in Sources */,
 				3C9BB62C286EEA960079A214 /* MultiDatePickerUIView.swift in Sources */,
 				3C521218286C062400DCB788 /* DemoChartsUIView.swift in Sources */,
+				3C51C9CF28A54AC400BE4C76 /* DocCSwiftUIView.swift in Sources */,
 				3C7AB301287E52A4004ADDE5 /* AnylayoutUIView.swift in Sources */,
 				3C883340288CB6880076C0FF /* ChartsData.swift in Sources */,
 			);
@@ -477,6 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WWDC2022/WWDC2022.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +519,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WWDC2022/DocC/WWDC2022-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -509,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WWDC2022/WWDC2022.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +554,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WWDC2022/DocC/WWDC2022-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

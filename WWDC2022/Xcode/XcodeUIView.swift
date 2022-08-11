@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-///GamePlayer is new game player 
+/// GamePlayer is new game player
 struct GamePlayer: Identifiable , Codable {
     var id = UUID()
     var name: String
@@ -29,15 +29,16 @@ struct GamePlayer: Identifiable , Codable {
 }
 
 
+/// Final View for Xcode demo
 struct XcodeUIView: View {
-    
+    ///Players who are playing the game
     let players = [
         GamePlayer(name: "Tom"),
         GamePlayer(name: "Johnny"),
         GamePlayer(name: "Sam"),
         GamePlayer(name: "Big Boss", score: 100)
     ]
-    
+    /// Body of some view to show 
     var body: some View {
         
         //plural singular

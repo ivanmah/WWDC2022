@@ -19,9 +19,9 @@ struct AnylayoutUIView: View {
     var body: some View {
 //        let layout = horizontalSizeClass == .regular ? AnyLayout(HStack()) : AnyLayout(VStack())
 //        let layout = dynamicTypeSize <=  .xLarge ? AnyLayout(HStack()) : AnyLayout(VStack())
-        let layout = toggleState ? AnyLayout(HStack()) : AnyLayout(VStack())
+        //let layout = toggleState ? AnyLayout(HStack()) : AnyLayout(VStack())
         
-        layout {
+        HStack {
             Image(systemName: "1.circle")
             Image(systemName: "2.circle")
             Image(systemName: "3.circle")

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Demo view to showcase xcode 
 struct XcodeDemoUIView: View {
     var body: some View {
         Text("Demo Xcode")
