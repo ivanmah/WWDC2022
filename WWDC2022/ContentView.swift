@@ -18,9 +18,29 @@ struct ContentView: View {
     
     @EnvironmentObject var router : Router
     
+    func isSectionNotEmpty(category: Category) -> Bool {
+        return navigationModels.contains { model in
+            model.category == category
+        }
+    }
+    
+    
+    func getCategoryListToDisplay() -> [Category] {
+        var seen: Set<Category> = []
+        return navigationModels.map { model in
+            model.category
+        }.filter { category in
+            seen.insert(category).inserted
+        }
+    }
+    
+    
         var body: some View {
+            
+            let display = getCategoryListToDisplay()
+            
             NavigationStack(path: $router.navigationPath) {
-                List(Category.allCases) { category in
+                List(display) { category in
                     Section {
                         ForEach(navigationModels) { model in
                             if model.category == category {
@@ -28,7 +48,9 @@ struct ContentView: View {
                             }
                         }
                     } header: {
-                        Text(category.localizedName)
+                        if self.isSectionNotEmpty(category: category) {
+                            Text(category.localizedName)
+                        }
                     }
                 }
                 .navigationDestination(for: NavigationModel.self) { model in

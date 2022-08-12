@@ -37,15 +37,15 @@ struct NavigationModel : Identifiable, Hashable {
 
 enum Category: Int, Hashable, CaseIterable, Identifiable, Codable {
     
-    case Xcode, DocC//, Swift, SwiftUI
+    case Xcode, DocC, Swift, SwiftUI
     var id: Int {rawValue}
     
     var localizedName: LocalizedStringKey {
         switch self {
-//        case .Swift:
-//            return "Swift"
-//        case .SwiftUI:
-//            return "SwiftUI"
+        case .Swift:
+            return "Swift"
+        case .SwiftUI:
+            return "SwiftUI"
         case .Xcode:
             return "Xcode"
         case .DocC:
