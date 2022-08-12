@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+//Title
+
+//Quick link to new page
+
+//Swift code sample
+
+//Add Documentation category
+
 /// View to showcase DocC documentation
 ///
 /// Add active link to another page ``XcodeUIView``.
