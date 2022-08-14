@@ -15,6 +15,8 @@ import SwiftUI
 
 //Add Documentation category
 
+//Base docC hosting path and upload to github pages
+
 /// View to showcase DocC documentation
 ///
 /// Add active link to another page ``XcodeUIView``.
