@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D224CA328ADD9F400D1B290 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D224CA228ADD9F400D1B290 /* WidgetKit.framework */; };
+		2D224CA528ADD9F400D1B290 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D224CA428ADD9F400D1B290 /* SwiftUI.framework */; };
+		2D224CA828ADD9F400D1B290 /* WWDC2022_Lockscreen_Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D224CA728ADD9F400D1B290 /* WWDC2022_Lockscreen_Widgets.swift */; };
+		2D224CAA28ADD9F600D1B290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D224CA928ADD9F600D1B290 /* Assets.xcassets */; };
+		2D224CAE28ADD9F600D1B290 /* WWDC2022 Lockscreen WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2D224CA028ADD9F400D1B290 /* WWDC2022 Lockscreen WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2D38DD5B288EF778006F859A /* RegularExpressions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D38DD5A288EF778006F859A /* RegularExpressions.swift */; };
+		2D55518128ADE9E200655CEC /* ChartsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88333F288CB6880076C0FF /* ChartsData.swift */; };
 		2DF3AB9F285836A100DA868E /* WWDC2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF3AB9E285836A100DA868E /* WWDC2022App.swift */; };
 		2DF3ABA1285836A100DA868E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF3ABA0285836A100DA868E /* ContentView.swift */; };
 		2DF3ABA3285836A200DA868E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF3ABA2285836A200DA868E /* Assets.xcassets */; };
@@ -37,7 +43,37 @@
 		3CF79853285C2C230027F2E2 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF79852285C2C230027F2E2 /* NavigationModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2D224CAC28ADD9F600D1B290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DF3AB93285836A100DA868E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D224C9F28ADD9F400D1B290;
+			remoteInfo = "WWDC2022 Lockscreen WidgetsExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D224CAF28ADD9F600D1B290 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2D224CAE28ADD9F600D1B290 /* WWDC2022 Lockscreen WidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2D224CA028ADD9F400D1B290 /* WWDC2022 Lockscreen WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WWDC2022 Lockscreen WidgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D224CA228ADD9F400D1B290 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2D224CA428ADD9F400D1B290 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2D224CA728ADD9F400D1B290 /* WWDC2022_Lockscreen_Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC2022_Lockscreen_Widgets.swift; sourceTree = "<group>"; };
+		2D224CA928ADD9F600D1B290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D224CAB28ADD9F600D1B290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D38DD5A288EF778006F859A /* RegularExpressions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularExpressions.swift; sourceTree = "<group>"; };
 		2DF3AB9B285836A100DA868E /* WWDC2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF3AB9E285836A100DA868E /* WWDC2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC2022App.swift; sourceTree = "<group>"; };
@@ -72,6 +108,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2D224C9D28ADD9F400D1B290 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D224CA528ADD9F400D1B290 /* SwiftUI.framework in Frameworks */,
+				2D224CA328ADD9F400D1B290 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2DF3AB98285836A100DA868E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,10 +127,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D224CA128ADD9F400D1B290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D224CA228ADD9F400D1B290 /* WidgetKit.framework */,
+				2D224CA428ADD9F400D1B290 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D224CA628ADD9F400D1B290 /* WWDC2022 Lockscreen Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				2D224CA728ADD9F400D1B290 /* WWDC2022_Lockscreen_Widgets.swift */,
+				2D224CA928ADD9F600D1B290 /* Assets.xcassets */,
+				2D224CAB28ADD9F600D1B290 /* Info.plist */,
+			);
+			path = "WWDC2022 Lockscreen Widgets";
+			sourceTree = "<group>";
+		};
 		2DF3AB92285836A100DA868E = {
 			isa = PBXGroup;
 			children = (
 				2DF3AB9D285836A100DA868E /* WWDC2022 */,
+				2D224CA628ADD9F400D1B290 /* WWDC2022 Lockscreen Widgets */,
+				2D224CA128ADD9F400D1B290 /* Frameworks */,
 				2DF3AB9C285836A100DA868E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				2DF3AB9B285836A100DA868E /* WWDC2022.app */,
+				2D224CA028ADD9F400D1B290 /* WWDC2022 Lockscreen WidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,6 +349,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2D224C9F28ADD9F400D1B290 /* WWDC2022 Lockscreen WidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D224CB228ADD9F600D1B290 /* Build configuration list for PBXNativeTarget "WWDC2022 Lockscreen WidgetsExtension" */;
+			buildPhases = (
+				2D224C9C28ADD9F400D1B290 /* Sources */,
+				2D224C9D28ADD9F400D1B290 /* Frameworks */,
+				2D224C9E28ADD9F400D1B290 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WWDC2022 Lockscreen WidgetsExtension";
+			productName = "WWDC2022 Lockscreen WidgetsExtension";
+			productReference = 2D224CA028ADD9F400D1B290 /* WWDC2022 Lockscreen WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		2DF3AB9A285836A100DA868E /* WWDC2022 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DF3ABAA285836A200DA868E /* Build configuration list for PBXNativeTarget "WWDC2022" */;
@@ -289,10 +373,12 @@
 				2DF3AB97285836A100DA868E /* Sources */,
 				2DF3AB98285836A100DA868E /* Frameworks */,
 				2DF3AB99285836A100DA868E /* Resources */,
+				2D224CAF28ADD9F600D1B290 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2D224CAD28ADD9F600D1B290 /* PBXTargetDependency */,
 			);
 			name = WWDC2022;
 			productName = WWDC2022;
@@ -309,6 +395,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					2D224C9F28ADD9F400D1B290 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					2DF3AB9A285836A100DA868E = {
 						CreatedOnToolsVersion = 14.0;
 						LastSwiftMigration = 1400;
@@ -329,11 +418,20 @@
 			projectRoot = "";
 			targets = (
 				2DF3AB9A285836A100DA868E /* WWDC2022 */,
+				2D224C9F28ADD9F400D1B290 /* WWDC2022 Lockscreen WidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2D224C9E28ADD9F400D1B290 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D224CAA28ADD9F600D1B290 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2DF3AB99285836A100DA868E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +444,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D224C9C28ADD9F400D1B290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D55518128ADE9E200655CEC /* ChartsData.swift in Sources */,
+				2D224CA828ADD9F400D1B290 /* WWDC2022_Lockscreen_Widgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2DF3AB97285836A100DA868E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,7 +488,76 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2D224CAD28ADD9F600D1B290 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D224C9F28ADD9F400D1B290 /* WWDC2022 Lockscreen WidgetsExtension */;
+			targetProxy = 2D224CAC28ADD9F600D1B290 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2D224CB028ADD9F600D1B290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LAMR92KJ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WWDC2022 Lockscreen Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WWDC2022 Lockscreen Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dbs.appstudio.demo.WWDC2022.WWDC2022-Lockscreen-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D224CB128ADD9F600D1B290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LAMR92KJ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WWDC2022 Lockscreen Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WWDC2022 Lockscreen Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dbs.appstudio.demo.WWDC2022.WWDC2022-Lockscreen-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		2DF3ABA8285836A200DA868E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -494,6 +670,7 @@
 		2DF3ABAB285836A200DA868E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -502,7 +679,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WWDC2022/Preview Content\"";
-				DEVELOPMENT_TEAM = LYV7H7NCDF;
+				DEVELOPMENT_TEAM = 8LAMR92KJ8;
 				DOCC_HOSTING_BASE_PATH = WWDC2022;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -515,7 +692,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ivanmah.demo.WWDC2022;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dbs.appstudio.demo.WWDC2022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -530,6 +707,7 @@
 		2DF3ABAC285836A200DA868E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -551,7 +729,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ivanmah.demo.WWDC2022;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.demo.WWDC2022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -565,6 +743,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2D224CB228ADD9F600D1B290 /* Build configuration list for PBXNativeTarget "WWDC2022 Lockscreen WidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D224CB028ADD9F600D1B290 /* Debug */,
+				2D224CB128ADD9F600D1B290 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2DF3AB96285836A100DA868E /* Build configuration list for PBXProject "WWDC2022" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
