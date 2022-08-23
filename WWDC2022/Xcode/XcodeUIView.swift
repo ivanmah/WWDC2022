@@ -42,12 +42,12 @@ struct XcodeUIView: View {
     var body: some View {
         
         //plural singular
-        let scores = players.map { $0.score }
-        let names = players.map { $0.name }
+        //let scores = players.map { $0.score }
+        //let names = players.map { $0.name }
         
         
         List(players) { player in
-            Text(player.name)
+            Label(player.name, systemImage: "person.fill")
         }
         
         //scroll sticky

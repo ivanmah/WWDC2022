@@ -91,7 +91,7 @@ struct ViewFactory {
         case "XcodeDemoUIView":
             XcodeDemoUIView()
         case "DocCSwiftUIView":
-            DocCSwiftUIView(text: "Hello, World!!!")
+            DocCDemoSwiftUIView()
         default:
             Text("Empty View")
         }

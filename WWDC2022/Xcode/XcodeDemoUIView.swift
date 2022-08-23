@@ -7,18 +7,23 @@
 
 import SwiftUI
 
+struct FoodRating : Identifiable {
+    var id = UUID()
+    var name: String
+    var score: Int
+}
+
 /// Demo view to showcase xcode 
 struct XcodeDemoUIView: View {
+    
+    let foodscores: [FoodRating] = [
+        FoodRating(name: "Chicken chop", score: 20),
+        FoodRating(name: "Nasi Lemak", score: 25),
+        FoodRating(name: "Egg Prata", score: 30)
+    ]
+    
     var body: some View {
         Text("Demo Xcode")
-            .navigationTitle("Xcode")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink("More") {
-                        XcodeUIView()
-                    }
-                }
-            }
     }
 }
 
