@@ -29,6 +29,7 @@
 		3C7AB2FE287DC97C004ADDE5 /* SearchableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AB2FD287DC97C004ADDE5 /* SearchableUIView.swift */; };
 		3C7AB301287E52A4004ADDE5 /* AnylayoutUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AB300287E52A4004ADDE5 /* AnylayoutUIView.swift */; };
 		3C80DC5428B381EE002B8DA4 /* DocCDemoSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80DC5328B381EE002B8DA4 /* DocCDemoSwiftUIView.swift */; };
+		3C80DC5D28B4A6BB002B8DA4 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80DC5C28B4A6BB002B8DA4 /* MemoryView.swift */; };
 		3C883340288CB6880076C0FF /* ChartsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88333F288CB6880076C0FF /* ChartsData.swift */; };
 		3C883342288D84AA0076C0FF /* DemoGridUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C883341288D84AA0076C0FF /* DemoGridUIView.swift */; };
 		3C9BB626286D7C8C0079A214 /* GridUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BB625286D7C8C0079A214 /* GridUIView.swift */; };
@@ -92,6 +93,7 @@
 		3C7AB2FD287DC97C004ADDE5 /* SearchableUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableUIView.swift; sourceTree = "<group>"; };
 		3C7AB300287E52A4004ADDE5 /* AnylayoutUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnylayoutUIView.swift; sourceTree = "<group>"; };
 		3C80DC5328B381EE002B8DA4 /* DocCDemoSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocCDemoSwiftUIView.swift; sourceTree = "<group>"; };
+		3C80DC5C28B4A6BB002B8DA4 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
 		3C88333F288CB6880076C0FF /* ChartsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsData.swift; sourceTree = "<group>"; };
 		3C883341288D84AA0076C0FF /* DemoGridUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGridUIView.swift; sourceTree = "<group>"; };
 		3C9BB625286D7C8C0079A214 /* GridUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUIView.swift; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 			children = (
 				3CA38FCA2897763C004BC659 /* XcodeDemoUIView.swift */,
 				3CA38FCC28977877004BC659 /* XcodeUIView.swift */,
+				3C80DC5C28B4A6BB002B8DA4 /* MemoryView.swift */,
 			);
 			path = Xcode;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				3C51C9CF28A54AC400BE4C76 /* DocCSwiftUIView.swift in Sources */,
 				3C7AB301287E52A4004ADDE5 /* AnylayoutUIView.swift in Sources */,
 				3C883340288CB6880076C0FF /* ChartsData.swift in Sources */,
+				3C80DC5D28B4A6BB002B8DA4 /* MemoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

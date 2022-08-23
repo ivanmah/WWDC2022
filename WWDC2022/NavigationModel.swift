@@ -31,6 +31,7 @@ struct NavigationModel : Identifiable, Hashable {
 //        .init(name: "Navigation Stack", viewClassName: "NavigationStackUIView", category: .SwiftUI),
 //        .init(name: "Navigation Split", viewClassName: "NavigationSplitUIView", category: .SwiftUI),
         .init(name: "What's new in Xcode", viewClassName: "XcodeDemoUIView", category: .Xcode),
+        .init(name: "Memory leak", viewClassName: "MemoryView", category: .Xcode),
         .init(name: "DocC", viewClassName: "DocCSwiftUIView", category: .DocC)
     ]
 }
@@ -92,6 +93,8 @@ struct ViewFactory {
             XcodeDemoUIView()
         case "DocCSwiftUIView":
             DocCDemoSwiftUIView()
+        case "MemoryView":
+            MemoryView()
         default:
             Text("Empty View")
         }
